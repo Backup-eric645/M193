@@ -2,12 +2,14 @@
 M193 is a font format that uses opcodes to describe which is which.
 ## The Opcodes
 ```
-0x5a   Point     int16 x,y;
-0x3f   Line      int16 x1,y1,x2,y2;
-0x7c   Oval      int16 x1,y1,x2,y2;
-0x7e   Circle    int16 cx,cy; int8 radius;
-0xfc   Arc       int16 cx,cy,startAngle,sweepAngle; int8 radius;
-0xfe   Oval Arc  int16 x1,y1,x2,y2,startAngle,sweepAngle;
+0x5a   Point         int16 x,y;
+0x3f   Line          int16 x1,y1,x2,y2;
+0x7c   Oval          int16 x1,y1,x2,y2;
+0x7e   Circle        int16 cx,cy; int8 radius;
+0xfc   Arc           int16 cx,cy,startAngle,sweepAngle; int8 radius;
+0xfe   Oval Arc      int16 x1,y1,x2,y2,startAngle,sweepAngle;
+0xfd   Rect.         int16 x1,y1,x2,y2;
+0xfd   Filled Rect.  int16 x1,y1,x2,y2;
 ```
 ## The Header
 ```
