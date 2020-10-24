@@ -9,7 +9,6 @@ M193 is a font format that uses opcodes to describe which is which.
 0xfc   Arc           int16 cx,cy,startAngle,sweepAngle; int8 radius;
 0xfe   Oval Arc      int16 x1,y1,x2,y2,startAngle,sweepAngle;
 0xfd   Rect.         int16 x1,y1,x2,y2;
-0xfd   Filled Rect.  int16 x1,y1,x2,y2;
 ```
 ## The Header
 ```
